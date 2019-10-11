@@ -24,16 +24,21 @@
 input[type=text]:focus {
   width: 100%;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom : 30px;
+}
 </style>
 </head>
 <body>
-<p>Gini Search</p>
-<img height="200px" width="190px" src="https://instagram.fbom6-1.fna.fbcdn.net/vp/20a8912fb3697d79e296048427ab3b7a/5E2FBFF1/t51.2885-15/e35/72361842_135667917733826_8055864678030354466_n.jpg?_nc_ht=instagram.fbom6-1.fna.fbcdn.net&_nc_cat=102">
+<h1 align="center">Ask Gini</h1>
+<img class="center" align="centre" height="200px" width="190px" src="https://instagram.fbom6-1.fna.fbcdn.net/vp/20a8912fb3697d79e296048427ab3b7a/5E2FBFF1/t51.2885-15/e35/72361842_135667917733826_8055864678030354466_n.jpg?_nc_ht=instagram.fbom6-1.fna.fbcdn.net&_nc_cat=102">
 <form>
-  <input type="text" name="word" placeholder="Gini knows everything....">
+  <input class="center" type="text" name="word" placeholder="Gini knows everything....">
 </form>
-<table>
-    <tr><th>Result</th></tr>
+<table align="center">
 {% for word in result_words %}
     <tr><td>{{ word }}</td></tr>
 {% endfor %}

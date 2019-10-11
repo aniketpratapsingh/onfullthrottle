@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Baba Search</title>
+    <title>Gini Search</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     input[type=text] {
-  width: 130px;
+  width: 330px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('searchicon.png');
+  background-image: url('https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/512/search.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -27,13 +27,16 @@ input[type=text]:focus {
 </style>
 </head>
 <body>
-<p>Baba Search</p>
-
+<p>Gini Search</p>
+<img height="200px" width="190px" src="https://instagram.fbom6-1.fna.fbcdn.net/vp/20a8912fb3697d79e296048427ab3b7a/5E2FBFF1/t51.2885-15/e35/72361842_135667917733826_8055864678030354466_n.jpg?_nc_ht=instagram.fbom6-1.fna.fbcdn.net&_nc_cat=102">
 <form>
-  <input type="text" name="word" placeholder="Search..">
+  <input type="text" name="word" placeholder="Gini knows everything....">
 </form>
+<table>
+    <tr><th>Result</th></tr>
 {% for word in result_words %}
-{{ word }}<br>
+    <tr><td>{{ word }}</td></tr>
 {% endfor %}
+</table>
 </body>
 </html>

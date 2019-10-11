@@ -1,0 +1,9 @@
+#requirements.txt
+
+Django==2.2.5
+pytz==2019.2
+sqlparse==0.3.0
+gunicorn==19.6.0
+djangorestframework==3.10.3
+pandas==0.25.1
+requests==2.22.0
